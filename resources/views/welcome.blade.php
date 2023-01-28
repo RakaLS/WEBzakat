@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/landing_style.css">
+    
 
 </head>
 <style>
@@ -22,9 +23,17 @@
     <ul class="navbar">
         <li><h2>Permata zakat</h2></li>
     </ul>
-    <ul class="navbar-menu">
-       
-    <li><a href="https://sitpermata.id/" >Tentang</a></li>
+    <ul  class="navbar-menu">
+       <li style="display: inline-block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;"><a href="/login">Login</a></li>
+    <li><a style="display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;" href="https://sitpermata.id/" >Tentang</a></li>
     
     <li class="dropdown">
         <a href="#" class="dropbtn">List</a>
@@ -38,7 +47,7 @@
         </div>
     </li>
 
-    <li><a href="/login">Login</a></li>
+    
     </ul>
     <section class="first-container">
 
@@ -157,9 +166,65 @@
     </ol>
     </div>
         </div>
-            
-       
     </section>
+
+    <section class="first-container">            
+<!-- START FORM -->
+
+<form action='{{ url('data_pembayaran') }}' method='post'>
+    <div class="fist">
+        <h1>Mari Zakat</h1>
+    </div>
+
+    <div style="" class="fist">
+        
+        
+        <div class="">
+            <label for="nama" class="">Nama</label>
+            <div class="">
+                <input type="text" class="" name='nama' value="{{ Session::get('nama') }}" id="nama">
+            </div>
+        </div>
+        <div class="">
+            <label for="alamat" class="">Alamat</label>
+            <div class="col-sm-10">
+                <input type="text" class="" name='alamat' value="{{ Session::get('alamat') }}" id="alamat">
+            </div>
+        </div>
+        <div class="">
+            <label for="noTelp" class="">No.Telp</label>
+            <div class="col-sm-10">
+                <input type="number" class="" name='noTelp' value="{{ Session::get('noTelp') }}" id="noTelp">
+            </div>
+        </div>
+        <div class="">
+            <label for="jenisKelamin" class="">Jenis Kelamin</label>
+            <div class="col-sm-10">
+                <input type="text" class="" name='jenisKelamin' value="{{ Session::get('jenisKelamin') }}" id="jenisKelamin">
+            </div>
+        </div>
+        <div class="">
+            <label for="jumlah" class="">Jumlah</label>
+            <div class="col-sm-10">
+                <input type="number" class="" name='jumlah' value="{{ Session::get('jumlah') }}" id="jumlah">
+            </div>
+        </div>
+        <div class="">
+            <label for="simpan" class=""></label>
+            <div class="col-sm-10"><button type="submit" class="" name="submit">SIMPAN</button></div>
+        </div>
+    </div>
+    </form>
+    <!-- AKHIR FORM -->
+
+        
+    </section>
+
+    <section >
+ 
+
+    </section>
+
     <section class=" patner-container" id="Patner">
         <h3>Patner kami</h3>
         

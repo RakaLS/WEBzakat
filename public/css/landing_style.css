@@ -26,19 +26,29 @@ body{
     display: flex;
     gap: 30px;
 }
-     ul {
+ul {
     list-style-type: none;
+    display: flex;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgb(66, 206, 47);
     }
     
-    li {
+    .nav-menu li {
     float: right;
-    }
     
-    li a, .dropbtn {
+    }
+
+    .nav-menu > li > a{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+    
+    .nav-menu li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -46,11 +56,11 @@ body{
     text-decoration: none;
     }
     
-    li a:hover, .dropdown:hover .dropbtn {
+    .nav-menu li a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(0, 255, 26);
     }
     
-    li.dropdown {
+    .nav-menu >li.dropdown {
     display: inline-block;
     }
     
@@ -237,6 +247,12 @@ align-self: center;
             display: flex;
             background: rgb(123, 240, 123);
             padding: 0 10%;
+            ;
+            
+        }
+
+        .alasan-container > ol >li {
+            text-align: left;
             
         }
 

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use DB;
 
 use App\Models\mdlPembayaran;
 use Illuminate\Http\Request;
@@ -28,7 +29,13 @@ class ctrlPembayaran extends Controller
         } else {
             $data = mdlPembayaran::orderBy('id', 'desc')->paginate($jumlahbaris);
         }
-        return view('index')->with('data', $data);
+        
+        $statistik = DB::select("CALL get_statistik()");
+        return view('index', [
+            'data'=> $data,
+            'statistik' => $statistik,
+        ]);
+
     }
 
     /**

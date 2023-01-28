@@ -1,6 +1,19 @@
 @extends('tamplate')
 <!-- START DATA -->
 @section('konten')
+
+<div class="d-flex w-75 justify-content-beatween my-5" align="center">
+
+    <div class="card w-50 bg-primary text-white mx-3">
+        <h1 style="text-align: center;">Jumlah Donatur:</h1>
+        <h1 style="text-align: center;">{{$statistik[0]->jml_donatur}}</h1>
+    </div>
+    <div class="card w-50 bg-success text-white mx-3">
+        <h1 style="text-align: center;">Yang telah terkumpul</h1>
+        <h1 style="text-align: center;">Rp.{{$statistik[0]->jml_uang}},</h1>
+    </div>
+</div>
+
 <div class="my-3 p-3 bg-body rounded shadow-sm">
     <!-- FORM PENCARIAN -->
     <div class="pb-3">
