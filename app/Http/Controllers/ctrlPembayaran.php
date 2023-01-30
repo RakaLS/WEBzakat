@@ -179,4 +179,38 @@ class ctrlPembayaran extends Controller
         // dd($resi);
         return $resi;
     }
+
+    public function proses_upload(Request $request){
+		$this->validate($request, [
+            
+			'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+            'nama' => 'required',
+            'alamat' => 'required',
+            'noTelp' => 'required',
+            'jenisKelamin' => 'required',
+            'jumlah' => 'required',
+            
+		]);
+ 
+		// menyimpan data file yang diupload ke variabel $file
+		$file = $request->file('foto');
+ 
+		$nama_file = time()."_".$file->getClientOriginalName();
+ 
+      	        // isi dengan nama folder tempat kemana file diupload
+		$tujuan_upload = 'data_file';
+		$file->move($tujuan_upload,$nama_file);
+ 
+		mdlMhs::create([
+			'foto' => $nama_file,
+			'nama' => $request->nama,
+            'alamat' => $request->alamat,
+            'noTelp' => $request->noTelp,
+            'jenisKelamin' => $request->jenisKelamin,
+            'jumlah' => $request->jumlah,
+		]);
+ 
+		return redirect('./');
+	}
+
 }

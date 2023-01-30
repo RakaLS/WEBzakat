@@ -24,11 +24,7 @@
         <li><h2>Permata zakat</h2></li>
     </ul>
     <ul  class="navbar-menu">
-       <li style="display: inline-block;
-       color: white;
-       text-align: center;
-       padding: 14px 16px;
-       text-decoration: none;"><a href="/login">Login</a></li>
+       
     <li><a style="display: inline-block;
         color: white;
         text-align: center;
@@ -46,7 +42,11 @@
             <a href="#Patner">Patner kami</a>
         </div>
     </li>
-
+    <li ><a style="display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;" href="/login">Login</a></li>
     
     </ul>
     <section class="first-container">
@@ -175,10 +175,13 @@
     <div class="fist">
         <h1>Mari Zakat</h1>
     </div>
-
+    @csrf 
     <div style="" class="fist">
         
-        
+        <div class="">
+            <label for="foto" class="">Upload Gambar</label>
+            <div class="col-sm-10"><button type="file" class="" name="foto">Upload</button></div>
+        </div>
         <div class="">
             <label for="nama" class="">Nama</label>
             <div class="">
