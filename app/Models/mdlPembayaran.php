@@ -14,7 +14,7 @@ class mdlPembayaran extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-
+        'foto',
         'resi',
         'nama',
         'alamat',

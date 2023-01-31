@@ -52,15 +52,23 @@
                 <td>{{ $item->jumlah }}</td>
                 <td>
 
-                    <div class="d-flex flex-row justify-content-center">
-                        <a href='{{ url('data_pembayaran/'.$item->id.'/edit') }}' class="btn btn-warning btn-sm">Edit</a>
-                        <form onsubmit="return confirm('Yakin akan menghapus data?')" class='d-inline' action="{{ url('data_pembayaran/'.$item->id) }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" name="submit" class="btn btn-danger btn-sm mx-1">Delete</button>
-                        </form>
-                        <a href='{{ url('cetak-pdf/'.$item->id) }}' class="btn btn-success btn-sm">Print</a>
-                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href='{{ url('data_pembayaran/'.$item->id.'/edit') }}'>Edit</a>
+                          <form onsubmit="return confirm('Yakin akan menghapus data?')" class='d-inline' action="{{ url('data_pembayaran/'.$item->id) }}" method="post">
+                                                  @csrf
+                                                  @method('DELETE')
+                                                  <button type="submit" name="submit" class="dropdown-item">Delete</button>
+                                              </form>
+                      
+                          <a class="dropdown-item" href='{{ url('cetak-pdf/'.$item->id) }}'>Print</a>
+                          <a class="dropdown-item" href='{{ url('#'.$item->id) }}'>Detail</a>
+                        </div>
+                      </div>
+                      
                 </td>
             </tr>
             <?php $i++ ?>
@@ -71,3 +79,4 @@
 </div>
 <!-- AKHIR DATA -->
 @endsection
+

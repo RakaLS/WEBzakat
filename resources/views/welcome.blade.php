@@ -12,14 +12,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/landing_style.css">
-    
+    <link rel="stylesheet" href="./js/landing_script.js">
 
 </head>
 <style>
     #more {display: none;}
 </style>
 <body>
-    <script src="script.js"></script>
+    <script src="./js/landing_script.js"></script>
     <ul class="navbar">
         <li><h2>Permata zakat</h2></li>
     </ul>
