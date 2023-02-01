@@ -43,7 +43,7 @@
             </div>
             <div class="d-flex flex-row-reverse ">
                 <a href="{{ url('cetak-pdf/'.$data->id) }}'" class="btn btn-success mx-1">Print</a>
-                <a href="/data_pembayaran" class="btn btn-secondary mx-1">Tidak</a>
+                <a href="/dt-pembayaran" class="btn btn-secondary mx-1">Tidak</a>
             </div>
         </div>
     </div>

@@ -14,13 +14,14 @@ class mdlPembayaran extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'foto',
+
         'resi',
         'nama',
         'alamat',
         'noTelp',
         'jenisKelamin',
         'jumlah',
+        'img',
     ];
 
     public $timestamps = false;

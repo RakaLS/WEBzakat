@@ -37,7 +37,7 @@ body {
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
 }
-ul li:hover a{
+ul.list-side li:hover a{
   padding-left: 50px;
 }
 .sidebar ul a i{

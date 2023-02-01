@@ -51,7 +51,7 @@
         <p>Dengan hormat,</p>
         <p style="text-align: justify;">
             Kami segenap jajaran Pimpinan, Direksi, dan Karyawan Yayasan Permata mengucapkan terima kasih yang sebesar – besarnya kepada {{$data->nama}} atas partisipasi dan kerjasamanya untuk kegiatan kami.
-            Kami bersyukur mendapatkan bantuan dana dan atensi yang sebesar {{$data->jumlah}} dari pihak {{$data->nama}}. Berkat kerjasamanya, puji syukur kegiatan BERBAGI BERSAMA MELALUI PERMATA ZAKAT kami dapat berjalan dengan lancar tanpa hambatan.
+            Kami bersyukur mendapatkan bantuan dana dan atensi yang sebesar Rp.&nbsp; {{number_format($data->jumlah)}} dari pihak {{$data->nama}}. Berkat kerjasamanya, puji syukur kegiatan BERBAGI BERSAMA MELALUI PERMATA ZAKAT kami dapat berjalan dengan lancar tanpa hambatan.
             Demikian surat ucapan terimakasih ini kami sampaikan, atas perhatian Bapak/Ibu kami sampaikan terimakasih yang sebesar besarnya.
         </p>
         <p style="text-align: right;">Surabaya, {{ date('d-m-Y') }}</p>
