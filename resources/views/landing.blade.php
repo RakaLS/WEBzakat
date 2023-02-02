@@ -47,7 +47,7 @@
     </ul>
     <ul class="navbar-menu" style="justify-content: flex-end; text-align: center;
        padding: 14px 16px;">
-        <li class="dropdown" style="padding-left:15px;padding-right: 15px;">
+        <li class="dropdown" style="padding-left:15px; padding-right: 15px;">
             <a href="#" class="dropbtn" style="text-decoration: none; color: white;" onclick="">List</a> 
             <div class="dropdown-content">
                 <a href="#Pengertian">Apa sih zakat itu?</a>
