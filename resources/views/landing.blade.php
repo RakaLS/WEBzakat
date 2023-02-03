@@ -55,7 +55,7 @@
                 <a href="#Kisah">Sebuah kisah nyata</a>
                 <a href="#Macam">Macam zakat</a>
                 <a href="#Alasan">Alasan mengapa memilih berzakat di sini</a>
-                <a href="#Donasi">Form berzakat</a>
+                <a href="#Donasi">Berzakat disini</a>
                 <a href="#Patner">Patner kami</a>
                 
             </div>
@@ -115,7 +115,7 @@
         <div class="content1">
             <div class="content1-body">
                 <div class="Read-more" id="fila">
-                    <h3>Zakat Penghasilan</h3>
+                    <h4>Zakat Penghasilan</h4>
                     <p>Zakat penghasilan adalah zakat yang berasal dari penghasilan pezakat sebesar 2,5% secara langsung yang diperuntukan
                         <span class="sebelum">...</span><span class="more" style="display: none;">
                             untuk Fakir, Miskin, Amil, Gharimin, Fisabilillah, dan Ibnus Sabil
@@ -132,7 +132,7 @@
         <div class="content2">
             <div class="content2-body" id="2">
                 <div class="Read-more" id="ila">
-                    <h3>Zakat Emas</h3>
+                    <h4>Zakat Emas</h4>
                     <p>Zakat Emas adalah zakat yang berasal dari emas, perak dan logam mulia lainnya yang disimpan selama setahun milik pezakat dan zakatnya diperuntukan
                         <span class="sebelum">...</span><span class="more" style="display: none;">
                             untuk Fakir, Miskin, Amil, Gharimin, Fisabilillah, dan Ibnus Sabil
@@ -148,7 +148,7 @@
         <div class="content3">
             <div class="content3-body" id="3">
                 <div class="Read-more" id="ia">
-                    <h3>Zakat Tabungan</h3>
+                    <h4>Zakat Tabungan</h4>
                     <p>Zakat Tabungan adalah zakat dari tabungan yang dikenakan saat jumlah saldo akhir telah mencapai haul dan diperuntukan
                         <span class="sebelum">...</span><span class="more" style="display: none;">
                             untuk Fakir, Miskin, Amil, Gharimin, Fisabilillah, dan Ibnus Sabil

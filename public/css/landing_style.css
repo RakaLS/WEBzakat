@@ -507,11 +507,11 @@ align-self: center;
                         height: 400px;
                         background: white;
                         margin: 40px 0;
-                        padding: 20% 0 0 10%;
+                        padding: 10% 0 15% 0;
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
                         grid-template-columns: repeat(auto-fit);
-                        gap: 30px;
+                        gap: 5px;
                     }
             
                     .content-container .content1{
@@ -521,7 +521,7 @@ align-self: center;
                     }
             
                     .content1 > .content1-body > .Read-more{
-                        padding: 20px;
+                        padding: 10px;
                         color: aliceblue;
                     }
                     .content1 p{
@@ -541,7 +541,7 @@ align-self: center;
                     }
             
                     .content2 > .content2-body > .Read-more{
-                        padding: 20px;
+                        padding: 10px;
                         color: aliceblue;
                     }
                     .content2 p{
@@ -562,7 +562,7 @@ align-self: center;
                     }
             
                     .content3 > .content3-body > .Read-more{
-                        padding: 20px;
+                        padding: 10px;
                         color: aliceblue;
                         
                     }
@@ -588,20 +588,20 @@ align-self: center;
             
                     .patner-container{
                         height: 100px;
-                        padding: 20px;
+                        padding: 0 20px;
                         align-self: center;
                         font-size: 30px;
                     }
             
                     .Pembayaran-container{
-                        height: 500px;
+                        height: 400px;
                         background: white;
                         margin: 40px 0;
-                        padding: 0 10%;
+                        padding: 20% 0 15% 0;
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
                         grid-template-columns: repeat(auto-fit);
-                        gap: 30px;
+                        gap: 5px;
                     }
             
                     .Pembayaran-container .content4{
