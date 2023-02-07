@@ -77,11 +77,11 @@ a:hover, a:active {
                 <a href="./" style="text-align: center">Kembali</a> -->
                 <input type="submit" class="btn" value="Login">
                 <div style="display: flex; 
-                 justify-content: space-between;
+                 justify-content: center;
                   ">
                     
 				<a href="./" style="text-align: center">Kembali</a>
-                <a href="/register" style=" text-align: center">Register</a>
+                
                 </div>
                 
             </form>
