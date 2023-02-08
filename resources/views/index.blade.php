@@ -164,14 +164,14 @@
                 <div class="row my-3">
                     <div class="col-md-2">Bukti</div>
                     <div class="col-md">:&nbsp;
-                        <!-- <img src="{{ url('#'.$item->img) }}" alt="">     -->
-                        <a href="{{ url('#'.$item->img) }}" > Show Image</a>
+                        <!-- <img src="{{ url('storage/'.$item->img) }}" alt="">     -->
+                        <a href="{{ url('storage/'.$item->img) }}" > Show Image</a>
                     </div>
                 </div>
 
                 <!-- <div class="d-flex justify-content center">
                     <div class="w-50">
-                        <img src="{{asset('#'.'$item->img')}}" width="100%" alt="" srcset="">
+                        <img src="{{asset('storage/'.'$item->img')}}" width="100%" alt="" srcset="">
                     </div>
                 </div> -->
             </div>

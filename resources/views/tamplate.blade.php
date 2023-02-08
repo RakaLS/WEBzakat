@@ -37,7 +37,7 @@
 
       <ul class="list-side">
         <li>
-          <a href="/data_pembayaran"><i class="fas fa-qrcode"></i>Dashboard</a>
+          <a href="/dt-pembayaran"><i class="fas fa-qrcode"></i>Dashboard</a>
         </li>
         <li>
           <a href="#"><i class="fas fa-calendar-week"></i>Events</a>
