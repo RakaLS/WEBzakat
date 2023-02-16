@@ -15,7 +15,7 @@
     }
     @media print and (width: 21cm) and (height: 29.7cm) {
         @page {
-            margin: 3cm;
+            margin: 2cm;
         }
     }
     /* style sheet for "letter" printing */
@@ -27,14 +27,18 @@
 
     /* A4 Landscape*/
     @page {
-        size: A4 landscape;
-        margin: 10%;
+        size: A3 landscape;
+        margin: 5%;
     }
 </style>
 
 <body>
     <div class="container">
-        <h1>Permata Zakat</h1>
+ 
+            
+        <h2><img style="height: 80px;" src="./assets/PERMATA-LOGO.svg" alt="permata" > Permata Zakat</h2>
+
+        
         <hr>
         <br><br><br>
         <p>
