@@ -100,6 +100,7 @@ Route::post('store-whitout-login', function (Request $request) {
 
 Route::get('preview-pdf/{id}', [cetakPdf::class, 'preview_pdf']);
 Route::get('cetak-pdf/{id}', [cetakPdf::class, 'cetak_pdf']);
+Route::get('qr-code/{id}', [ctrlPembayaran::class, 'downloadQrCode']);
 
 // public function get_resi()
 //     {

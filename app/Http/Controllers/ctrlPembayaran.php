@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use PhpParser\Node\Stmt\TryCatch;
+use BaconQrCode\Encoder\QrCode;
+use BaconQrCode\Common\ErrorCorrectionLevel;
+
 
 class ctrlPembayaran extends Controller
 {
@@ -232,4 +235,20 @@ class ctrlPembayaran extends Controller
         // $data->delete();
 
     }
+
+    public function downloadQrCode($id)
+    {
+        $data = mdlPembayaran::findOrFail($id);
+
+        $qrCode = new QrCode($data->id . ' ' . $data->resi . ' ' . $data->nama . ' ' . $data->alamat . ' ' . $data->noTelp . ' ' . $data->jenisKelamin . ' ' . $data->jumlah);
+        $qrCode->setErrorCorrectionLevel(new ErrorCorrectionLevel(ErrorCorrectionLevel::HIGH));
+
+        $qrCodeImage = $qrCode->writeString();
+        $imageName = $data->nama . '.jpg';
+
+        Storage::put('qr-code/' . $imageName, $qrCodeImage);
+
+        return Storage::download('qr-code/' . $imageName);
+    }
+
 }

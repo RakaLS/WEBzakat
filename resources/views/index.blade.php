@@ -84,6 +84,7 @@
                                 <li></li>
                                 <li><a class="dropdown-item" href="{{ url('preview-pdf/'.$item->id) }}" >Preview</a></li>
                                 <li><a class="dropdown-item" href="{{ url('cetak-pdf/'.$item->id) }}">Print</a></li>
+                                <li><a class="dropdown-item" href="{{ url('qr-code/'.$item->id) }}" download="{{ $item->name }}.jpg">Save QR Code</a></li>
                             </ul>
 
                         </div>
