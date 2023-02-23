@@ -1,7 +1,30 @@
 @extends('tamplate')
 <!-- START DATA -->
 @section('konten')
+<script>
+    // Import library phpqrcode
+require_once 'phpqrcode/qrlib.php';
 
+// Get data from MySQL
+$isi = DB::table('users')->select('id', 'name', 'address')->get();
+
+// Generate QR code and save as SVG
+foreach ($isi as $d) {
+    // Define filename based on name
+    $filename = 'C:\xampp\htdocs\landingPage\qr-code\\' . $d->nama . '.svg';
+    
+    // Generate QR code with data and save as SVG
+    QRcode::svg($d->id . ' ' . $d->resi . ' ' . $d->nama . ' ' . $d->alamat . ' ' . $d->noTelp . ' ' . $d->jenisKelamin . ' ' . $d->jumlah, $filename);
+}
+
+// Download file when button is clicked
+function downloadFile($filename) {
+    header('Content-Type: application/svg+xml');
+    header('Content-Disposition: attachment; filename="' . $filename . '"');
+    readfile('C:\xampp\htdocs\landingPage\qr-code\\' . $filename);
+}
+
+</script>
 <div class="d-flex flex-row w-100 justify-content-center my-5" align="center">
 
     <div class=" align-self-center d-flex flex-row">
@@ -84,7 +107,7 @@
                                 <li></li>
                                 <li><a class="dropdown-item" href="{{ url('preview-pdf/'.$item->id) }}" >Preview</a></li>
                                 <li><a class="dropdown-item" href="{{ url('cetak-pdf/'.$item->id) }}">Print</a></li>
-                                <li><a class="dropdown-item" href="{{ url('qr-code/'.$item->id) }}" download="{{ $item->name }}.jpg">Save QR Code</a></li>
+                                <li><a class="dropdown-item" onclick="downloadFile('{{ $filename }}')">Save QR Code</a></li>
                             </ul>
 
                         </div>
